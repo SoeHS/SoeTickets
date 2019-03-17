@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBB2AACC-D626-4A30-9F55-D8CA18D962A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UTTicketReservationbyKaungMinKhant</RootNamespace>
+    <AssemblyName>UTTicketReservationbyKaungMinKhant</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.14\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminpanelViewcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpanelViewcs.Designer.cs">
+      <DependentUpon>adminpanelViewcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="auditoriumView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="auditoriumView.Designer.cs">
+      <DependentUpon>auditoriumView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choosebackorfrontend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosebackorfrontend.Designer.cs">
+      <DependentUpon>choosebackorfrontend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Datagyi.cs" />
+    <Compile Include="dbConnection.cs" />
+    <Compile Include="employeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeView.Designer.cs">
+      <DependentUpon>employeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertAuditoriumView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertAuditoriumView.Designer.cs">
+      <DependentUpon>insertAuditoriumView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertDataView.Designer.cs">
+      <DependentUpon>insertDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertMovieView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertMovieView.Designer.cs">
+      <DependentUpon>insertMovieView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertScreeningView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertScreeningView.Designer.cs">
+      <DependentUpon>insertScreeningView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertSeatView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertSeatView.Designer.cs">
+      <DependentUpon>insertSeatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface1.cs" />
+    <Compile Include="loginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginView.Designer.cs">
+      <DependentUpon>loginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movieView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movieView.Designer.cs">
+      <DependentUpon>movieView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receiptView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receiptView.Designer.cs">
+      <DependentUpon>receiptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerView.Designer.cs">
+      <DependentUpon>registerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservation2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation2.Designer.cs">
+      <DependentUpon>reservation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservationlogView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservationlogView.Designer.cs">
+      <DependentUpon>reservationlogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservationView.Designer.cs">
+      <DependentUpon>reservationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screeningView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screeningView.Designer.cs">
+      <DependentUpon>screeningView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seatView1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seatView1.Designer.cs">
+      <DependentUpon>seatView1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seatView2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seatView2.Designer.cs">
+      <DependentUpon>seatView2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminpanelViewcs.resx">
+      <DependentUpon>adminpanelViewcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="auditoriumView.resx">
+      <DependentUpon>auditoriumView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosebackorfrontend.resx">
+      <DependentUpon>choosebackorfrontend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeView.resx">
+      <DependentUpon>employeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertAuditoriumView.resx">
+      <DependentUpon>insertAuditoriumView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertDataView.resx">
+      <DependentUpon>insertDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertMovieView.resx">
+      <DependentUpon>insertMovieView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertScreeningView.resx">
+      <DependentUpon>insertScreeningView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertSeatView.resx">
+      <DependentUpon>insertSeatView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginView.resx">
+      <DependentUpon>loginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movieView.resx">
+      <DependentUpon>movieView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receiptView.resx">
+      <DependentUpon>receiptView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerView.resx">
+      <DependentUpon>registerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservation2.resx">
+      <DependentUpon>reservation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservationlogView.resx">
+      <DependentUpon>reservationlogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservationView.resx">
+      <DependentUpon>reservationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screeningView.resx">
+      <DependentUpon>screeningView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seatView1.resx">
+      <DependentUpon>seatView1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seatView2.resx">
+      <DependentUpon>seatView2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-ticket.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
